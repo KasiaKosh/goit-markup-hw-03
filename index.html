@@ -7,27 +7,31 @@
   <title>Studio</title>
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" type='text/css'>
 </head>
 
 <body>
   <header>
-    <a class=logo href="./index.html"><span class=web>Web</span> Studio</a>
-    <nav>
-      <ul>
-        <li><a class="menu-link" href="#">Студия</a></li>
-        <li><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
-        <li><a class="menu-link" href="#">Контакты</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a class="cotact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a  class="cotact-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container flexbox">
+      <nav class="navigation">
+        <a class=logo href="./index.html"><span class=web>Web</span> Studio</a>
+        <ul class="list">
+          <li class="item itempad"><a class="menu-link" href="#">Студия</a></li>
+          <li class="item itempad"><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
+          <li class="item itempad"><a class="menu-link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+        <ul class="list">
+          <li class="items itempad">
+            <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="items itempad">
+            <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+    </div>
   </header>
 
   <!--банер-->
@@ -37,15 +41,16 @@
         <h1 class="texth">
           Эффективные решения для вашего бизнеса
         </h1>
-        <button class="button-text" >Заказать услугу</button>
+        <button class="button-main">Заказать услугу</button>
       </div>
     </section>
   </main>
 
   <!--особенности-->
   <section>
-    <h2 hidden>Особенности</h2>
-    <ul>
+    <div class="container">
+      <h2 class="hhidden"></h2>
+    <ul class="list">
       <li>
         <img class="features-img" src="images/features/antenna.svg" alt="Image_of_antena" />
         <h3 class="features-text">Внимание к деталям</h3>
@@ -79,12 +84,14 @@
         </p>
       </li>
     </ul>
+    </div>
   </section>
 
   <!--чем занимаемся-->
   <section>
+    <div class="container">
     <h2 class="wdc">Чем мы занимаемся</h2>
-    <ul class="features-img">
+    <ul class="list">
       <li>
         <img src="images/What_doing/img.jpg" width="370" height="294" alt="Image_of_desctop" />
         <span class="dmd">Десктопные приложения</span>
@@ -98,94 +105,141 @@
         <span class="dmd">Дизайнерские решения</span>
       </li>
     </ul>
+  </div>
   </section>
 
   <!--команда-->
-  <section>
+  <section class="section">
+  <div class="container">
     <h2 class="wdc">Наша команда</h2>
-    <ul class="features-img">
-      <li>
+    <ul class="list">
+      <li class="imgcomand" >
         <img src="images/Command/img_2.jpg" width="270" height="260" alt="Image_of_nikolay_kucherenko" />
         <h3 class="command-text">Николай Кучеренко</h3>
-        <p lang="en">Product Designer</p>
-        <ul>
+        <p class="prof" lang="en">Product Designer</p>
+        <ul class="list">
           <li>
-            <a class="menu-link" href="https://www.instagram.com/" target="_blank" aria-label="ссылка Instagram">Instagram</a>
+            <a class="menu-link" href="https://www.instagram.com/" target="_blank"
+              aria-label="ссылка Instagram">
+              <img src="images/Social/instagram.svg" width="44" height="44">
+            </a>
           </li>
           <li>
-            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">Twitter</a>
+            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">
+              <img src="images/Social/twitter.svg" width="44" height="44">
+            </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.facebook.com/" target="_blank" aria-label="ссылка Facebook">Facebook</a>
+            <a class="menu-link" href="https://www.facebook.com/" target="_blank"
+              aria-label="ссылка Facebook">
+            <img src="images/Social/facebook.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.linkedin.com/" target="_blank" aria-label="ссылка Linkedin">Linkedin</a>
+            <a class="menu-link" href="https://www.linkedin.com/" target="_blank"
+              aria-label="ссылка Linkedin">
+            <img src="images/Social/linkedin.svg" width="44" height="44">
+          </a>
           </li>
         </ul>
       </li>
-      <li>
+      <li class="imgcomand">
         <img src="images/Command/img_3.jpg" width="270" height="260" alt="Image_of_olga_ivanova" />
         <h3 class="command-text">Ольга Иванова</h3>
-        <p lang="en">Frontend Developer</p>
-        <ul>
+        <p class="prof" lang="en">Frontend Developer</p>
+        <ul class="list">
           <li>
-            <a class="menu-link" href="https://www.instagram.com/" target="_blank" aria-label="ссылка Instagram">Instagram</a>
+            <a class="menu-link" href="https://www.instagram.com/" target="_blank"
+              aria-label="ссылка Instagram">
+            <img src="images/Social/instagram2.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">Twitter</a>
+            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">
+            <img src="images/Social/twitter.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.facebook.com/" target="_blank" aria-label="ссылка Facebook">Facebook</a>
+            <a class="menu-link" href="https://www.facebook.com/" target="_blank"
+              aria-label="ссылка Facebook">
+            <img src="images/Social/facebook.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.linkedin.com/" target="_blank" aria-label="ссылка Linkedin">Linkedin</a>
+            <a class="menu-link" href="https://www.linkedin.com/" target="_blank"
+              aria-label="ссылка Linkedin">
+            <img src="images/Social/linkedin.svg" width="44" height="44">
+          </a>
           </li>
         </ul>
       </li>
-      <li>
+      <li class="imgcomand">
         <img src="images/Command/img_4.jpg" width="270" height="260" alt="Image_of_andrey_shevchenko" />
         <h3 class="command-text">Андрей Шевченко</h3>
-        <p lang="en">Marketing</p>
-        <ul>
-          <li>
-            <a class="menu-link" href="https://www.instagram.com/" target="_blank" aria-label="ссылка Instagram">Instagram</a>
+        <p class="prof" lang="en">Marketing</p>
+        <ul class="list">
+          <li class="social">
+            <a class="menu-link" href="https://www.instagram.com/" target="_blank"
+              aria-label="ссылка Instagram">
+            <img src="images/Social/instagram2.svg" width="44" height="44">
+          </a>
+          </li>
+          <li class="social">
+            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">
+            <img src="images/Social/twitter.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">Twitter</a>
+            <a class="menu-link" href="https://www.facebook.com/" target="_blank"
+              aria-label="ссылка Facebook">
+            <img src="images/Social/facebook.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.facebook.com/" target="_blank" aria-label="ссылка Facebook">Facebook</a>
-          </li>
-          <li>
-            <a class="menu-link" href="https://www.linkedin.com/" target="_blank" aria-label="ссылка Linkedin">Linkedin</a>
+            <a class="menu-link" href="https://www.linkedin.com/" target="_blank"
+              aria-label="ссылка Linkedin">
+            <img src="images/Social/linkedin.svg" width="44" height="44">
+          </a>
           </li>
         </ul>
       </li>
-      <li>
+      <li class="imgcomand">
         <img src="images/Command/img_5.jpg" width="270" height="260" alt="Image_of_ivan_nikolaev" />
         <h3 class="command-text">Иван Николаев</h3>
-        <p lang="en">UI Designer</p>
-        <ul>
+        <p class="prof" lang="en">UI Designer</p>
+        <ul class="list">
           <li>
-            <a class="menu-link" href="https://www.instagram.com/" target="_blank" aria-label="ссылка Instagram">Instagram</a>
+            <a class="menu-link" href="https://www.instagram.com/" target="_blank"
+              aria-label="ссылка Instagram">
+            <img src="images/Social/instagram2.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">Twitter</a>
+            <a class="menu-link" href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">
+            <img src="images/Social/twitter.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.facebook.com/" target="_blank" aria-label="ссылка Facebook">Facebook</a>
+            <a class="menu-link" href="https://www.facebook.com/" target="_blank"
+              aria-label="ссылка Facebook">
+            <img src="images/Social/facebook.svg" width="44" height="44">
+          </a>
           </li>
           <li>
-            <a class="menu-link" href="https://www.linkedin.com/" target="_blank" aria-label="ссылка Linkedin">Linkedin</a>
+            <a class="menu-link" href="https://www.linkedin.com/" target="_blank"
+              aria-label="ссылка Linkedin">
+            <img src="images/Social/linkedin.svg" width="44" height="44">
+          </a>
           </li>
         </ul>
       </li>
     </ul>
+    </div>
   </section>
   <!--клиенты-->
-  <section>
+  <section class="container">
     <h2 class="wdc">Постоянные клиенты</h2>
-    <ul>
+    <ul class="list">
       <li>
         <a href="" target="_blank" aria-label="ссылка logo1">
           <img src="images/Clients/logo_1.svg" alt="Image_of_client1" /></a>
@@ -227,22 +281,22 @@
     <div>
       <section>
         <p class="foot-text">Присоеденяйтесь</p>
-        <ul>
+        <ul class="list">
           <li>
             <a href="https://www.instagram.com/" target="_blank" aria-label="ссылка Instagram">
-            <img src="images/Social/instagram.svg" alt="Instagram"> </a>
+              <img src="images/Social/instagram.svg" alt="Instagram"> </a>
           </li>
           <li>
             <a href="https://twitter.com/" target="_blank" aria-label="ссылка Twitter">
-            <img src="images/Social/twitter.svg" alt="Twitter"></a>
+              <img src="images/Social/twitter.svg" alt="Twitter"></a>
           </li>
           <li>
             <a href="https://www.facebook.com/" target="_blank" aria-label="ссылка Facebook">
-            <img src="images/Social/facebook.svg" alt="Facebook"></a>
+              <img src="images/Social/facebook.svg" alt="Facebook"></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/" target="_blank" aria-label="ссылка Linkedin">
-            <img src="images/Social/linkedin.svg" alt="Linkedin"></a>
+              <img src="images/Social/linkedin.svg" alt="Linkedin"></a>
           </li>
         </ul>
       </section>
